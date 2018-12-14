@@ -1,11 +1,11 @@
-$primary-color: #121f48;
-$secondary-color: #e26a6a;
-// All WCAG Compliant for font size ratio 4.97
+@import "config";
+
 * {
   box-sizing: border-box;
 }
 
 body {
+  @include background;
   background: $primary-color;
   color: #ffffff;
   height: 100%;
@@ -59,7 +59,14 @@ main {
 
       &:hover {
         color: $secondary-color;
+        @include easeOut();
       }
+    }
+  }
+  &home {
+    overflow: hidden;
+    h1 {
+      margin-top: 20vh;
     }
   }
 }
