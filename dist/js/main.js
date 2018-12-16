@@ -14,7 +14,7 @@ menuBtn.addEventListener("click", toggleMenu);
 function toggleMenu() {
   //check to see if the menu is clicked
   if (!showMenu) {
-    menuBtn.classList.add("close");
+    menuBtn.classList.add('close');
     menu.classList.add("show");
     menuNav.classList.add("show");
     menuBranding.classList.add("show");
