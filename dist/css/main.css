@@ -75,7 +75,7 @@
   text-transform: uppercase;
   padding: 1rem 0;
   font-weight: 300;
-  color: white;
+  color: #fff;
   text-decoration: none;
   transition: all 1 ease-out; }
   .nav-link:hover {
@@ -129,7 +129,7 @@
 
 body {
   background: #121f48;
-  color: #ffffff;
+  color: #fff;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
