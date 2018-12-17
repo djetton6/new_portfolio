@@ -87,10 +87,10 @@
 
   .portrait {
     // resize image to 250px
-    width: 500px;
-    height: 500px;
+    width: 250px;
+    height: 215px;
     background: darken($primary-color, 5);
-    background: url("../img/headshot.jpg");
+    background: url("../img/headshot_small.jpg");
     border-radius: 50%;
     border: solid 3px $secondary-color;
   }
