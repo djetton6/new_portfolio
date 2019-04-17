@@ -13,5 +13,13 @@
   "dependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djetton6/new_portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/djetton6/new_portfolio/issues"
   }
 }
