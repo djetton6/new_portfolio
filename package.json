@@ -5,6 +5,7 @@
   "main": "index.js",
   "homepage": "https://djetton6.github.io/new_portfolio",
   "scripts": {
+    "watch": "parcel src/index.html",
     "sass": "node-sass -w scss/ -o dist/css --recursive",
     "deploy": "gh-pages -d dist"
   },
