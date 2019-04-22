@@ -205,16 +205,28 @@ body {
 
 .primary-btn {
   background: #4b21ff;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
   text-align: center;
   color: #fefefe;
-  padding: 30px;
-  display: inline-block; }
+  padding: 15px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 3px; }
 
 .ghost-btn {
-  border: 4px solid #4b21ff; }
+  border: 4px solid #4b21ff;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color: #4b21ff;
+  padding: 12px 27px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-right: 15px; }
 
 
 /*# sourceMappingURL=/js.00a46daa.css.map */
