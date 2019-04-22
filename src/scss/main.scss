@@ -2,10 +2,28 @@
 @import "./home";
 @import "./reset";
 
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   font-size: 18px;
   background: $color1;
   font-family: "IBM Plex Sans", sans-serif;
   height: 100%;
+}
+
+.primary-btn {
+  background: $color1;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-align: center;
+  color: $color3;
+  padding: 30px;
+  display: inline-block;
+}
+
+.ghost-btn {
+  border: 4px solid $color1;
 }
