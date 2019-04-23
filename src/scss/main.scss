@@ -13,11 +13,16 @@ body {
   height: 100%;
 }
 
-.hamburger-icon {
+.menu-icon {
   position: fixed;
   right: 36px;
   top: 36px;
   padding: 20px;
+  z-index: 11;
+  font-size: 4rem;
+  :hover {
+    color: burlywood;
+  }
 
   .fa {
     font-size: 2rem;
@@ -55,11 +60,59 @@ body {
 #menu {
   background: $color1;
   position: fixed;
+  width: 100%;
   top: 0;
-  left: 0;
-  right: 0;
   bottom: 0;
+  transform: translate3d(-100%, 0, 0);
+  top: 100%;
   z-index: 10;
   display: flex;
   align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+
+  nav {
+    width: 400px;
+    text-align: center;
+    a {
+      font-size: 2.3rem;
+      padding: 1rem;
+      display: block;
+      text-decoration: none;
+      color: white;
+      &:hover {
+        color: $color5;
+      }
+    }
+  }
+
+  .menu-active {
+    .menu-icon {
+      .fa {
+        color: white;
+      }
+    }
+    #menu {
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  nav {
+    width: 400px;
+    text-align: center;
+    a {
+      font-size: 2.3rem;
+      padding: 1rem;
+      display: block;
+      text-decoration: none;
+      color: white;
+      &:hover {
+        color: $color5;
+      }
+    }
+  }
 }
