@@ -1,10 +1,13 @@
 @import "./variables";
+@import "./infoSection";
 @import "./home";
 @import "./reset";
+@import "./resume";
 
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   font-size: 18px;
@@ -19,7 +22,7 @@ body {
   top: 36px;
   padding: 20px;
   z-index: 11;
-  font-size: 4rem;
+  font-size: 3rem;
   :hover {
     color: burlywood;
   }
@@ -128,4 +131,11 @@ body {
       }
     }
   }
+}
+
+.scroll-section {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 56px;
 }
