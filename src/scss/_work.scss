@@ -59,6 +59,15 @@
               padding: 56px;
               position: absolute;
               bottom: 0;
+              .project-details {
+                font-size: 1.1rem;
+                text-transform: capitalize;
+              }
+              .project-title {
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                font-weight: 700;
+              }
             }
           }
 

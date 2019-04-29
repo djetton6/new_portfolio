@@ -307,6 +307,13 @@ table {
             padding: 56px;
             position: absolute;
             bottom: 0; }
+            .work .content-area .work-section .project-section .project-box .grey-bg .project-info .project-details {
+              font-size: 1.1rem;
+              text-transform: capitalize; }
+            .work .content-area .work-section .project-section .project-box .grey-bg .project-info .project-title {
+              font-size: 1.8rem;
+              text-transform: uppercase;
+              font-weight: 700; }
         .work .content-area .work-section .project-section .project-box h5 {
           font-weight: 500;
           font-size: 1.3rem;
