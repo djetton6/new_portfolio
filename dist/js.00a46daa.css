@@ -257,6 +257,65 @@ table {
           font-size: 1rem;
           margin-bottom: 1rem; }
 
+.work .info-section {
+  width: 20%; }
+
+.work .content-area {
+  background: #fefefe;
+  margin-left: 30%;
+  width: 80%;
+  min-width: 300px;
+  background: white;
+  height: 100%;
+  overflow: hidden; }
+  .work .content-area .work-section {
+    margin-bottom: 56px; }
+    .work .content-area .work-section h1 {
+      font-weight: 700;
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin-bottom: 56px; }
+    .work .content-area .work-section .project-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      .work .content-area .work-section .project-section .project-box {
+        position: relative;
+        padding: 30px;
+        cursor: pointer;
+        transition: all 0.5 ease-in-out;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 400px; }
+        .work .content-area .work-section .project-section .project-box:hover {
+          -webkit-box-shadow: 0px 20px 74px 6px rgba(0, 0, 0, 0.12);
+          -moz-box-shadow: 0px 20px 74px 6px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 20px 74px 6px rgba(0, 0, 0, 0.12); }
+        .work .content-area .work-section .project-section .project-box .grey-bg {
+          position: absolute;
+          background: #efefef;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          opacity: 0;
+          transition: all 0.5s ease-in-out; }
+          .work .content-area .work-section .project-section .project-box .grey-bg:hover {
+            opacity: 0.9; }
+          .work .content-area .work-section .project-section .project-box .grey-bg .project-info {
+            padding: 56px;
+            position: absolute;
+            bottom: 0; }
+        .work .content-area .work-section .project-section .project-box h5 {
+          font-weight: 500;
+          font-size: 1.3rem;
+          margin-bottom: 1.4rem; }
+        .work .content-area .work-section .project-section .project-box p {
+          font-weight: 300;
+          font-size: 1rem;
+          margin-bottom: 1rem; }
+
 * {
   box-sizing: border-box; }
 
