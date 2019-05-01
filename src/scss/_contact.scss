@@ -1,0 +1,67 @@
+.home {
+  .info-section {
+    padding: 54px;
+    width: 35%;
+  }
+  .content-area {
+    background: $color3;
+    margin-left: 35%;
+    width: 65%;
+    background: white;
+    height: 100%;
+
+    .image-container {
+      display: inline-block;
+      width: 30%;
+      position: relative;
+      height: 100%;
+
+      .user-image {
+        position: absolute;
+        top: 56px;
+        left: -250px;
+        width: 500px;
+        height: calc(100% - 112px);
+        background: url(https://www.istcoalition.org/wp-content/uploads/2017/03/DJ_9.20.17.jpg)
+          no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        -webkit-box-shadow: 9px 18px 74px 6px rgba(10, 10, 10, 1);
+        -moz-box-shadow: 9px 18px 74px 6px rgba(10, 10, 10, 1);
+        box-shadow: 9px 18px 74px 6px rgba(10, 10, 10, 1);
+      }
+    }
+
+    .profile-section {
+      vertical-align: top;
+      display: inline-block;
+      max-width: 500px;
+      padding: 20% 0 0 0;
+
+      .profile {
+        h1 {
+          font-size: 2.3rem;
+          font-weight: 500;
+          line-height: 1.3;
+          margin: 0 0 1rem;
+          span {
+            color: $color1;
+          }
+        }
+
+        h5 {
+          font-size: 1.1rem;
+          margin: 0 0 2rem;
+        }
+        p {
+          color: $color5;
+          font-weight: 300;
+          line-height: 1.4;
+          margin: 0 0 2rem;
+        }
+      }
+    }
+  }
+}

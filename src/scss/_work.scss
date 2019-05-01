@@ -43,6 +43,7 @@
           }
 
           .grey-bg {
+            overflow: hidden;
             position: absolute;
             background: #efefef;
             top: 0;
@@ -53,20 +54,46 @@
             transition: all 0.5s ease-in-out;
             &:hover {
               opacity: 0.9;
+              .project-info {
+                .project-details {
+                  opacity: 1;
+                  transform: translate3d(0, 0, 0);
+                }
+                .project-title {
+                  opacity: 1;
+                  transform: translate3d(0, 0, 0);
+                }
+              }
             }
 
             .project-info {
               padding: 56px;
               position: absolute;
+              width: 100%;
               bottom: 0;
+
               .project-details {
+                margin: 0 0 1rem;
+                position: relative;
                 font-size: 1.1rem;
+                opacity: 0;
                 text-transform: capitalize;
+                transform: translate3d(-200px, 0, 0);
+                transition: all 0.5s ease-in;
               }
               .project-title {
                 font-size: 1.8rem;
                 text-transform: uppercase;
+                transform: translate3d(-100px, 0, 0);
+                opacity: 0;
                 font-weight: 700;
+                transition: all 0.3s ease-in 0.1s;
+              }
+              .fa-long-arrow-alt-right {
+                position: absolute;
+                bottom: 56px;
+                right: 56px;
+                font-size: 3rem;
               }
             }
           }
