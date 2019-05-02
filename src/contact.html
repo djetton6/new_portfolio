@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
   </head>
-  <body class="home">
+  <body class="contact">
     <div class="menu-icon"><i class="fas fa-hamburger"></i></div>
     <section id="menu">
       <nav>
@@ -58,24 +58,30 @@
     </section>
     <section class="content-area">
       <div class="image-container">
-        <div class="user-image"></div>
+        <div class="user-image">
+          <form action='/' method='POST'>
+          <input type="text" name="name" required>
+          <input type="email" name='email'>
+          <input type="text" name="budget">
+          <textarea name="message" id="" cols="30" rows="8" required></textarea>
+        <button type='submit'>Send Message</button>
+        </form>
+        </div>
       </div>
-      <div class="profile-section">
+      <div class="contact-section">
         <div class="profile">
-          <h1>
-            Desmend <br />
-            <span>Jetton</span>
-          </h1>
-          <h5>Web Developer</h5>
-          <p>
-            Hi my name is Desmend Jetton. I relocated from LA but enjoy Chicago
-            summer's. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Delectus impedit esse tempora odio numquam, sit quibusdam
-            accusantium natus eius totam? Reprehenderit, quasi eligendi?
-            Recusandae excepturi, eos sequi temporibus unde at?
-          </p>
-          <a href="./work.html" class="primary-btn">Portfolio</a>
-          <a href="./resume.html" class='ghost-btn'>Resume</a>
+          <div class="contact-box">
+            <h5>Phone</h5>
+            <p>(702-813-2820</p>
+          </div>
+          <div class="contact-box">
+            <h5>Email</h5>
+            <p>desmendjetton@gmail.com</p>
+          </div>
+          <div class="contact-box">
+            <h5>Address</h5>
+            <p>Bridgeport, Chicago, IL</p>
+          </div>
         </div>
       </div>
     </section>
