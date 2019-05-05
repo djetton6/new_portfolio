@@ -96,6 +96,12 @@
     top: -5px; }
     .home .menu-icon .fa {
       color: white; }
+  .home .content-area {
+    overflow: auto; }
+    .home .content-area:after {
+      content: "";
+      display: table;
+      clear: both; }
   .home .info-section {
     padding: 10px 20px;
     position: static; }
@@ -155,6 +161,9 @@
   .home .content-area .image-container {
     padding: 56px 20px 0;
     float: left; }
+    .home .content-area .image-container .user-image {
+      position: static;
+      width: 100%; }
   .home .content-area .profile-section {
     width: 70%;
     padding: 20% 60px;

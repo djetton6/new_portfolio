@@ -79,6 +79,16 @@
         color: white;
       }
     }
+
+    .content-area {
+      overflow: auto;
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+
     .info-section {
       padding: 10px 20px;
       position: static;
@@ -182,8 +192,8 @@
         float: left;
 
         .user-image {
-          // position: static;
-          // width: 100%;
+          position: static;
+          width: 100%;
         }
       }
       .profile-section {
