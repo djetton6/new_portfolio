@@ -16,31 +16,66 @@
       position: relative;
       height: 100%;
 
-      .user-image {
+      .form-section {
+        overflow-y: scroll;
+        overflow-x: hidden;
         position: absolute;
         top: 56px;
         left: -250px;
         width: 500px;
         height: calc(100% - 112px);
-        background: url(https://www.istcoalition.org/wp-content/uploads/2017/03/DJ_9.20.17.jpg)
-          no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        background: $color2;
+        color: $color3;
+        padding: 46px;
         -webkit-box-shadow: 9px 18px 74px 6px rgba(10, 10, 10, 1);
         -moz-box-shadow: 9px 18px 74px 6px rgba(10, 10, 10, 1);
         box-shadow: 9px 18px 74px 6px rgba(10, 10, 10, 1);
+
+        h4 {
+          margin-top: 2rem;
+          font-size: 1.3rem;
+          margin-bottom: 4rem;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          width: 100%;
+          background: transparent;
+          border: none;
+          border-bottom: 2px solid $color5;
+          margin-bottom: 2rem;
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          line-height: 1.2;
+          color: $color5;
+          padding: 15px 0;
+        }
+        button[type="submit"] {
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 30px;
+          border-radius: 30px;
+          text-align: center;
+          color: $color3;
+          background: $color1;
+          border: none;
+          font-size: 1rem;
+          padding: 17px 30px;
+          color: white;
+          text-transform: uppercase;
+          width: 100%;
+        }
       }
     }
 
-    .profile-section {
+    .contact-section {
       vertical-align: top;
       display: inline-block;
-      max-width: 500px;
-      padding: 20% 0 0 0;
+      width: 70%;
+      float: right;
+      padding: 56px;
 
-      .profile {
+      .contact-info {
         h1 {
           font-size: 2.3rem;
           font-weight: 500;
@@ -50,16 +85,29 @@
             color: $color1;
           }
         }
+        .contact-box {
+          max-width: 600px;
+          width: 100%;
+          padding: 30px;
+          cursor: pointer;
+          transition: all 0.5 ease-in-out;
+          &:hover {
+            -webkit-box-shadow: 0px 20px 74px 6px rgba(0, 0, 0, 0.12);
+            -moz-box-shadow: 0px 20px 74px 6px rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 20px 74px 6px rgba(0, 0, 0, 0.12);
+          }
 
-        h5 {
-          font-size: 1.1rem;
-          margin: 0 0 2rem;
-        }
-        p {
-          color: $color5;
-          font-weight: 300;
-          line-height: 1.4;
-          margin: 0 0 2rem;
+          h5 {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin: 0 0 1.5rem;
+          }
+          p {
+            color: $color5;
+            font-weight: 300;
+            line-height: 1.4;
+            margin: 0 0 2rem;
+          }
         }
       }
     }
