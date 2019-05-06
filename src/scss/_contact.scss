@@ -113,3 +113,144 @@
     }
   }
 }
+
+//phone screens
+@media (max-width: 767px) {
+  .home {
+    .menu-icon {
+      top: -3px;
+      color: white;
+      right: 20px;
+      top: -5px;
+
+      .fa {
+        color: white;
+      }
+    }
+
+    .content-area {
+      overflow: auto;
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+
+    .info-section {
+      padding: 10px 20px;
+      position: static;
+
+      .logo {
+        font-size: 0.7rem;
+        height: 50px;
+        width: 70px;
+      }
+      .info-box {
+        display: none;
+      }
+    }
+    .content-area {
+      margin-left: 0;
+      width: 100%;
+
+      .image-container {
+        padding: 56px 20px 0;
+
+        .user-image {
+          position: static;
+          width: 100%;
+        }
+      }
+      .profile-section {
+        width: 70%;
+        padding: 20% 20px 0;
+        float: right;
+
+        .profile {
+          .ghost-btn,
+          .primary-btn {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .home {
+    .content-area {
+      .image-container {
+        padding: 56px 20px 0;
+
+        .user-image {
+          position: static;
+          width: 100%;
+        }
+      }
+      .profile-section {
+        width: 70%;
+        padding: 20% 20px 0;
+        float: right;
+      }
+    }
+  }
+}
+//laptop screens
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home {
+    .content-area {
+      .image-container {
+        padding: 56px 20px 0;
+        float: left;
+
+        .user-image {
+          position: static;
+          width: 100%;
+        }
+      }
+
+      .profile {
+        .ghost-btn,
+        .primary-btn {
+          margin-bottom: 20px;
+        }
+      }
+
+      .profile-section {
+        width: 70%;
+        float: left;
+        padding: 20% 20px 0;
+        max-width: 800px;
+
+        .primary-btn,
+        ghost-btn {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact {
+    .content-area {
+      .image-container {
+        padding: 56px 20px 0;
+        float: left;
+
+        .user-image {
+          position: static;
+          width: 100%;
+        }
+      }
+      .profile-section {
+        width: 70%;
+        padding: 20% 60px;
+        // padding: 20% 20px 0;
+        float: left;
+        max-width: 800px;
+      }
+    }
+  }
+}
